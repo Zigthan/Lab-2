@@ -1,5 +1,3 @@
-
-
 def display_main_menu():
     print("Enter some numbers separated by commas:")
 
@@ -30,7 +28,7 @@ def calc_min_max_temperature(num_list):
 
       # calculate the maximum value
         maximum = max(num_list)
-        
+
         return (minimum, maximum)
 
 

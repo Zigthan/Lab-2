@@ -1,11 +1,11 @@
 import Lab2 
 
-def test_find_min_max_temperature():
+def test_calc_min_max_temperature():
     result =[]
     input_list = [5, 67, 32, 15, 89, 23, 41]
     expected_result = (5, 89)
 
-    result = Lab2.find_min_max_temperature(input_list)
+    result = Lab2.calc_min_max_temperature(input_list)
 
     assert result == expected_result
 

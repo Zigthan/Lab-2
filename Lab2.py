@@ -13,7 +13,7 @@ def get_user_input():
 
     return float_list
 
-def cal_average_temperature(num_list):
+def calc_average_temperature(num_list):
       #calculate the total sum of the list
       total = sum(num_list)
 
@@ -31,6 +31,12 @@ def calc_min_max_temperature(num_list):
 
         return (minimum, maximum)
 
+def calc_median_temperature(num_list):
+    num_list.sort()
+    if len(num_list) % 2 == 1:
+        return num_list[len(num_list) // 2]
+    else:
+        return (num_list[len(num_list) // 2 - 1] + num_list[len(num_list) // 2]) / 2
 
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
